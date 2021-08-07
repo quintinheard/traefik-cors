@@ -1,0 +1,20 @@
+displayName: Cross Origin Resource Sharing
+type: middleware
+
+import: github.com/quintinheard/traefik-cors/traefik
+
+summary: 'Automatically handle preflight requests with Traefik.'
+
+testData:
+  allowCredentials: true
+  allowHeaders:
+  - Authorization
+  - Content-Type
+  allowMethods:
+  - GET
+  allowOrigins:
+  - http://localhost
+  exposeHeaders:
+  - Authorization
+  - Location
+  maxAge: 36000
